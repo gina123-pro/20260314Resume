@@ -2,172 +2,58 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>王臆筑 - 亞洲大學個人履歷</title>
     <style>
-        /* CSS 樣式：負責排版與視覺設計 */
-        :root {
-            --primary-color: #2c3e50; /* 深藍色，代表專業 */
-            --accent-color: #e67e22;  /* 橘色，代表大一新生的朝氣 */
-            --bg-color: #f9f9f9;
-        }
-
-        body {
-            font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
-            background-color: var(--bg-color);
-            margin: 0;
-            padding: 40px 20px;
-            display: flex;
-            justify-content: center;
-        }
-
-        .resume-card {
-            background: white;
-            width: 100%;
-            max-width: 750px;
-            padding: 50px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-            border-top: 8px solid var(--accent-color);
-            border-radius: 4px;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        h1 {
-            margin: 0;
-            font-size: 2.5em;
-            color: var(--primary-color);
-        }
-
-        .sub-header {
-            color: #7f8c8d;
-            font-size: 1.1em;
-            margin-top: 10px;
-        }
-
-        section {
-            margin-bottom: 35px;
-        }
-
-        h3 {
-            color: var(--primary-color);
-            border-bottom: 2px solid #eee;
-            padding-bottom: 8px;
-            margin-bottom: 15px;
-            font-size: 1.3em;
-        }
-
-        .details {
-            list-style: none;
-            padding: 0;
-        }
-
-        .details li {
-            margin-bottom: 10px;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .skill-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .tag {
-            background: #f0f2f5;
-            padding: 6px 14px;
-            border-radius: 50px;
-            font-size: 0.9em;
-            color: #555;
-            transition: 0.3s;
-        }
-
-        .tag:hover {
-            background: var(--accent-color);
-            color: white;
-        }
-
-        #action-btn {
-            display: block;
-            width: 200px;
-            margin: 40px auto 0;
-            padding: 12px;
-            background: var(--primary-color);
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1em;
-            transition: transform 0.2s;
-        }
-
-        #action-btn:active {
-            transform: scale(0.95);
-        }
-
-        /* 手機版適配 */
-        @media (max-width: 600px) {
-            .resume-card { padding: 30px 20px; }
-            h1 { font-size: 2em; }
-        }
+        :root { --primary-color: #2c3e50; --accent-color: #e67e22; --bg-color: #f4f7f6; }
+        body { font-family: "Microsoft JhengHei", sans-serif; background-color: var(--bg-color); padding: 40px; }
+        .resume-wrapper { max-width: 800px; margin: auto; background: white; padding: 50px; border-top: 10px solid var(--accent-color); border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        header { display: flex; align-items: center; border-bottom: 2px solid #eee; padding-bottom: 20px; margin-bottom: 30px; }
+        .profile-photo { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid #eee; margin-right: 30px; }
+        h1 { color: var(--primary-color); margin: 0; }
+        section { margin-bottom: 25px; }
+        h2 { color: var(--primary-color); border-left: 5px solid var(--accent-color); padding-left: 10px; margin-bottom: 15px; }
+        .tag { display: inline-block; background: #f0f2f5; padding: 5px 15px; border-radius: 20px; margin: 5px 2px; font-size: 0.9em; }
+        #surprise-btn { background: var(--primary-color); color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; margin-top: 20px; }
     </style>
 </head>
 <body>
 
-<div class="resume-card">
+<div class="resume-wrapper">
     <header>
-        <h1>王臆筑</h1>
-        <div class="sub-header">學號：114018069 | 亞洲大學 大一學生</div>
+        <img src="IMG_4692.jpg" alt="王臆筑" class="profile-photo">
+        <div>
+            <h1>王臆筑</h1>
+            <p>學號：114018069 | 亞洲大學 大一學生</p>
+        </div>
     </header>
 
     <section>
-        <h3>關於我</h3>
+        <h2>關於我</h2>
         <p>我是王臆筑，目前就讀於亞洲大學一年級。我對新技術充滿好奇心，享受從零到一建構事物的成就感。在大一階段，我正積極打好程式基礎，並尋找將創意轉化為實際應用的機會。</p>
     </section>
 
     <section>
-        <h3>教育背景</h3>
-        <ul class="details">
-            <li>
-                <strong>亞洲大學 - 資訊相關系所</strong>
-                <span>2025 - 2029 (預計)</span>
-            </li>
-            <li>大一在讀中，專注於基礎程式邏輯與網頁開發入門。</li>
-        </ul>
-    </section>
-
-    <section>
-        <h3>學習中的技能</h3>
+        <h2>學習技能</h2>
         <div class="skill-tags">
-            <span class="tag">HTML5 / CSS3</span>
+            <span class="tag">HTML5 / CSS3 基礎</span>
             <span class="tag">JavaScript 基礎</span>
-            <span class="tag">Python 入門</span>
             <span class="tag">團隊協作</span>
-            <span class="tag">簡報設計</span>
+            <span class="tag">簡報製作</span>
+            <span class="tag">文化探索</span>
         </div>
     </section>
 
     <section>
-        <h3>聯絡管道</h3>
-        <p>📍 台中市霧峰區柳豐路 500 號 (亞洲大學)</p>
+        <h2>聯絡資訊</h2>
         <p>📧 Email: 114018069@asia.edu.tw</p>
+        <p>📍 地點: 台中市霧峰區柳豐路 500 號</p>
+        <button id="surprise-btn">查看驚喜 🎉</button>
     </section>
-
-    <button id="action-btn">查看驚喜</button>
 </div>
 
 <script>
-    // JavaScript 互動部分
-    const btn = document.getElementById('action-btn');
-    
-    btn.addEventListener('click', () => {
-        // 點擊後改變背景顏色並彈出問候
-        document.body.style.backgroundColor = '#fff3e0';
-        alert('嗨！我是亞洲大學大一的臆筑。很高興認識你！✨\n讓我們一起在技術的路上前進吧！');
+    document.getElementById('surprise-btn').addEventListener('click', () => {
+        alert('嗨！我是臆筑，很高興認識你！✨');
     });
 </script>
 
